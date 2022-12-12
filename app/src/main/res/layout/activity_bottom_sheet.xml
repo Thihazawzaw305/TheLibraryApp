@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable ="true"
+    app:behavior_peekHeight ="0dp"
+    android:elevation="@dimen/margin_medium_2"
+    android:background="@color/primary_background_color"
+    android:layout_height="300dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBookCoverFromBottomSheet"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:src="@drawable/book_cover" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBookTitleFromBottomSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/ivBookCoverFromBottomSheet"
+            android:text="The Art of Learing"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAuthorAndBookType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBookTitleFromBottomSheet"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toEndOf="@id/ivBookCoverFromBottomSheet"
+            android:text="The Art of Learing"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_regular" />
+
+        <FrameLayout
+            android:id="@+id/flLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:layout_below="@id/ivBookCoverFromBottomSheet"
+            android:background="@color/text_title_color" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDownload"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/flLine"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_alignBottom="@id/tvDownload"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:src="@drawable/ic_baseline_arrow_circle_down_black_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flLine"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toEndOf="@id/ivDownload"
+            android:text="Download"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/ivDownload"
+            android:layout_alignStart="@id/ivDownload"
+            android:layout_alignBottom="@id/tvAddToLibrary"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:src="@drawable/ic_baseline_add_to_photos_black_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddToLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDownload"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toEndOf="@id/ivDownload"
+            android:text="Add To Library"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAddToShelve"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/ivDelete"
+            android:layout_alignStart="@id/ivDownload"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_alignBottom="@id/tvAddToShelve"
+            android:src="@drawable/ic_baseline_add_black_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddToShelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddToLibrary"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_toEndOf="@id/ivDownload"
+            android:text="Add To Shelve"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMarkAsRead"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/ivAddToShelve"
+            android:layout_alignBottom="@id/tvAboutThisBook"
+            android:layout_alignStart="@id/ivDownload"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:src="@drawable/ic_baseline_book_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAboutThisBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAddToShelve"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/ivDownload"
+            android:text="About this book"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </RelativeLayout>
+
+

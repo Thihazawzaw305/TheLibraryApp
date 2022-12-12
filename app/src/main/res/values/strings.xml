@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">The Library App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_library">Library</string>
+    <string name="lbl_your_books">Your Books</string>
+    <string name="lbl_your_shelves">Your Shelves</string>
+    <string name="lbl_large_grid">Large Grid</string>
+    <string name="lbl_small_grid">Small Grid</string>
+    <string name="lbl_list">List</string>
+    <string name="lbl_author_name">Jacquelyn Benson</string>
+    <string name="lbl_book_title">A Wrath of Sparrows</string>
+    <string name="lbl_price">$ 1.99</string>
+    <string name="lbl_book_type">Ebook .</string>
+    <string name="lbl_pages">187 pages</string>
+    <string name="lbl_about_this_book">About this book</string>
+    <string name="lbl_description">An ebook (short for electronic book), also known as an e-book or eBook, is a book publication made available in digital form, consisting of text, images, or both, readable on the flat-panel display of computers or other electronic devices.[1] Although sometimes defined as</string>
+    <string name="lbl_ratings_and_reviews">Ratings and reviews</string>
+    <string name="lbl_rating_count">95 ratings</string>
+    <string name="lbl_reviewer_name">A Google User</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="lbl_sort_by_title">Sort By Book Title</string>
+    <string name="lbl_sort_by_author">Sort By Book Author</string>
+    <string name="lbl_sort_by_recent_opened">Sort By Book Recent Opened</string>
+    <string name="lbl_add_to_shelf">Add To Shelf</string>
+    <string name="lbl_remove_from_library">Remove From Library</string>
+    <string name="lbl_recent_opened">Sort By Recent Opened</string>
+    <string name="lbl_title">Sort By Title</string>
+    <string name="lbl_author">Sort By Author</string>
+    <string name="lbl_sort_by">Sort By Sort By</string>
+    <string name="lbl_search_book">Search Book</string>
+
+</resources>

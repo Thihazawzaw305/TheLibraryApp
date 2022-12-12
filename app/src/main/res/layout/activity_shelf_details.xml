@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.ShelfDetailsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBackFromShelfDetail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_black_24"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:tint="@color/blue"
+        android:layout_marginStart="@dimen/margin_medium_2"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnMoreFromShelfDetail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:src="@drawable/ic_baseline_more_vert_black_24"
+        android:tint="@color/blue" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutShelfDetailShelfName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMoreFromShelfDetail"
+        android:layout_marginHorizontal="@dimen/text_regular_2x"
+        android:layout_marginTop="@dimen/margin_large"
+        android:visibility="invisible"
+        app:boxStrokeColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etShelfNameFromShelfDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/text_heading_1x" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShelfNameFromShelfDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/text_regular_2x"
+        android:textSize="@dimen/text_heading_1x"
+        android:text="Fun Books"
+        android:textColor="@color/text_title_color"
+        android:layout_marginVertical="@dimen/margin_large"
+        android:layout_alignBottom="@id/textInputLayoutShelfDetailShelfName"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBookCountFromShelfDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInputLayoutShelfDetailShelfName"
+        android:layout_marginHorizontal="@dimen/margin_medium_2"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="10 books"
+        android:textSize="@dimen/text_regular" />
+
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvBookCountFromShelfDetail"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:background="@color/grey"/>
+
+    <include
+        android:id="@+id/vpFromShelfDetail"
+        layout="@layout/view_pod_grid_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineView"
+        android:layout_marginTop="@dimen/margin_medium_2" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    android:background="@color/primary_background_color"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivBookCoverFromSearchList"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_height="match_parent"
+            android:src="@drawable/book_cover"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/margin_medium"
+            android:layout_weight="0.5"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBookTitleFromSearchList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_xlarge"
+                android:text="@string/lbl_book_title"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/text_regular_3x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAuthorFromSearchList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBookTitleFromSearchList"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/lbl_author_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPriceFromSearchList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAuthorFromSearchList"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/lbl_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnMoreFromSearchList"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:src="@drawable/ic_baseline_more_horiz_black_24" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

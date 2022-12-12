@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable ="true"
+    app:behavior_peekHeight ="0dp"
+    android:elevation="@dimen/margin_medium_2"
+    android:background="@color/primary_background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSortByTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="@string/lbl_sort_by"
+        android:textColor="@color/text_title_color"
+        android:textSize="@dimen/text_heading_1x" />
+
+
+
+    <RadioGroup
+        android:layout_below="@id/tvSortByTitle"
+        android:id="@+id/radioButtonGroupForSorting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium_2"
+        >
+
+        <RadioButton
+            android:id="@+id/rBtnRecentlyOpened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_recent_opened"
+            android:textSize="@dimen/text_regular_2x"
+            />
+        <RadioButton
+            android:id="@+id/rBtnTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_title"
+            android:textSize="@dimen/text_regular_2x"
+            />
+
+        <RadioButton
+            android:id="@+id/rBtnAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_author"
+            android:textSize="@dimen/text_regular_2x"
+            />
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/gridBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable ="true"
+    app:behavior_peekHeight ="0dp"
+    android:elevation="@dimen/margin_medium_2"
+    android:background="@color/primary_background_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <RadioGroup
+        android:id="@+id/radioButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium_2">
+
+        <RadioButton
+            android:id="@+id/rBtnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_list"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <RadioButton
+            android:id="@+id/rBtnSmallGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_small_grid"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <RadioButton
+            android:id="@+id/rBtnLargeGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_large_grid"
+            android:textSize="@dimen/text_regular_2x" />
+
+    </RadioGroup>
+
+
+
+
+</RelativeLayout>

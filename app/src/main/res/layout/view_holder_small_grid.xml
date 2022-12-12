@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_medium_2">
+
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivEbookCoverFromSmallGrid"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:riv_corner_radius="@dimen/margin_medium"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ebook_cover" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnMoreFromSmallGrid"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:elevation="@dimen/margin_medium_2"
+        android:src="@drawable/ic_baseline_more_horiz_black_24"
+        android:tint="@color/white" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEbookTitleFromSmallGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivEbookCoverFromSmallGrid"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="7 Free Book Cover Maker" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEbookRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEbookTitleFromSmallGrid"
+        android:layout_gravity="center_vertical"
+        android:text="4.2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivStar"
+        android:layout_width="@dimen/margin_medium_2"
+        android:layout_height="@dimen/margin_medium_2"
+        android:layout_below="@id/tvEbookTitleFromSmallGrid"
+        android:layout_alignBottom="@id/tvEbookRating"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_toEndOf="@id/tvEbookRating"
+        app:srcCompat="@drawable/ic_baseline_star_black_24"
+        app:tint="@android:color/darker_gray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEbookPriceFromSmallGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEbookTitleFromSmallGrid"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/ivStar"
+        android:text="$0.07" />
+</RelativeLayout>

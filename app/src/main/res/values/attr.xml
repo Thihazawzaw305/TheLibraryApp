@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProgressBar">
+        <attr name="minLineValue" format="integer"/>
+        <attr name="maxLineValue" format="integer"/>
+        <attr name="lineProgressValue" format="integer"/>
+        <attr name="lineProgressBarColor" format="color"/>
+        <attr name="lineProgressBarThickness" format="dimension"/>
+
+
+<!--        <attr name="progressBarHeight" format="dimension" />-->
+<!--        <attr name="progressBarProgress" format="integer" />-->
+<!--        <attr name="progressBarColor" format="color" />-->
+<!--        <attr name="progressBarBackgroundColor" format="color" />-->
+    </declare-styleable>
+</resources>

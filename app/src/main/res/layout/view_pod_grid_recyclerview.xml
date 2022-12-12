@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.thiha.thelibraryapp.viewpods.GridRecyclerViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background_color">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/flNoBook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The is no Book"
+                android:textSize="@dimen/text_heading_1x"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnClear"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:src="@drawable/ic_baseline_close_black_24"
+            android:background="@drawable/background_close"
+            android:padding="@dimen/margin_small"
+            android:visibility="gone"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFilterChip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/btnClear"
+            android:clipToPadding="false"
+            android:paddingEnd="@dimen/margin_medium_2" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSorting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvFilterChip"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:drawableRight="@drawable/ic_baseline_sort_black_24"
+            android:drawablePadding="@dimen/margin_medium"
+            android:text="Sort By Book Title"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnGridView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/rvFilterChip"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/ic_baseline_view_list_black_24" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSmallGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGridView"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:clipToPadding="false"
+        android:paddingEnd="@dimen/margin_medium" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLargeGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGridView"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:clipToPadding="false"
+        android:paddingEnd="@dimen/margin_medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListFromYourBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGridView"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:clipToPadding="false"
+            android:paddingEnd="@dimen/margin_medium"
+            android:paddingBottom="60dp" />
+    </RelativeLayout>
+</com.padcmyanmar.thiha.thelibraryapp.viewpods.GridRecyclerViewPod>
+

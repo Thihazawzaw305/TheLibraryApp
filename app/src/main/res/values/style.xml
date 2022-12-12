@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+       <item name="background">@drawable/ic_filter_chip_background</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:elevation="@dimen/margin_medium_2"
+    android:background="@color/primary_background_color"
+    android:layout_height="150dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivShelvesCover"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_large"
+        android:elevation="5dp"
+        app:riv_corner_radius_top_left="@dimen/margin_medium"
+        app:riv_corner_radius_top_right="@dimen/margin_medium"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_plain_cover"
+      />
+
+    <FrameLayout
+        android:id="@+id/flShelfShadow"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:background="@color/grey" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShelfName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_toEndOf="@id/flShelfShadow"
+        android:text="Shelves 1"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShelfBookCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvShelfName"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/flShelfShadow"
+        android:text="3 Books"
+        android:textSize="@dimen/text_regular" />
+
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/btnMoreFromShelf"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/ic_baseline_more_horiz_black_24"
+    android:layout_marginEnd="@dimen/margin_medium_2"/>
+
+
+</RelativeLayout>
